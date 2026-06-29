@@ -1,0 +1,31 @@
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, max-content));
+    gap: 50px;
+    place-items: center;
+    margin: 0 auto;
+    padding: 4em 2em;
+    font-size: 22px;
+}
+
+.img-hero {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow:
+        5px 5px 15px rgba(65, 51, 0, 0.6),
+        -5px -5px 15px rgba(255, 255, 255, 0.8);
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social a {
+    text-decoration: none;
+    color: black;
+    background-color: #F0F0F0;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 40%;
+}

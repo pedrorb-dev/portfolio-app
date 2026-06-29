@@ -1,0 +1,19 @@
+.Header {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 30px;
+    border-radius: 20px;
+}
+
+.Header a {
+    text-decoration: none;
+    color: #5E5D5D;
+    font-size: 16px;
+}
+
+.Header a:hover {
+    color: #9f8501;
+    transition-duration: 0.5s;
+}

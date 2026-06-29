@@ -1,0 +1,31 @@
+.skill-item {
+    box-shadow:
+        5px 5px 15px rgba(65, 51, 0, 0.6),
+        -5px -5px 15px rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.skill-item:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow:
+        12px 12px 25px rgba(65, 51, 0, 0.35),
+        -2px -2px 10px rgba(255, 255, 255, 0.5);
+
+    .logo img {
+        transform: rotate(-7deg);
+    }
+}
+
+.logo img {
+    background-color: rgb(243, 243, 243);
+    width: 100px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}

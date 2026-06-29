@@ -1,0 +1,38 @@
+.items-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.img-project {
+    width: 100%;
+}
+
+.img-project img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.data-project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tecnologies-project,
+.test-project {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.test-project a {
+    text-decoration: none;
+}

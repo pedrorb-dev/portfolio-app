@@ -1,0 +1,24 @@
+{
+    "skills": {
+        "java": {
+            "img": "/src/assets/java-logo.png",
+            "name": "Java"
+        },
+        "react": {
+            "img": "/src/assets/react-logo.png",
+            "name": "React"
+        },
+        "spring": {
+            "img": "/src/assets/spring-logo.png",
+            "name": "Spring Framework"
+        },
+        "mysql": {
+            "img": "/src/assets/mysql-logo.png",
+            "name": "MySQL"
+        },
+        "javascript": {
+            "img": "/src/assets/javascript-logo.png",
+            "name": "JavaScript"
+        }
+    }
+}

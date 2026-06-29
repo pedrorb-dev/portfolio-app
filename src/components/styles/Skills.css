@@ -1,0 +1,7 @@
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
+    gap: 40px;
+    margin: 0 auto;
+    justify-content: center;
+}

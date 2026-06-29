@@ -1,0 +1,32 @@
+{
+    "projects": [
+        {
+            "name": "PapeApp",
+            "img": "/src/assets/PapeApp.avif",
+            "description": "Sistema web realizado para una papelería",
+            "tecnologies": [
+                "PHP",
+                "MySQL",
+                "JavaScript",
+                "AJAX"
+            ],
+            "test": [
+                "Código"
+            ]
+        },
+        {
+            "name": "CR-ARQUI",
+            "img": "/src/assets/cr-arqui.webp",
+            "description": "Página web para un arquitecto",
+            "tecnologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "test": [
+                "Código",
+                "Demo"
+            ]
+        }
+    ]
+}

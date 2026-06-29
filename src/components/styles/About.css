@@ -1,0 +1,10 @@
+.info-data .text {
+    font-size: 18px;
+}
+
+.img-about {
+    width: 250px;
+    box-shadow:
+        5px 5px 15px rgba(65, 51, 0, 0.6),
+        -5px -5px 15px rgba(255, 255, 255, 0.8);
+}
