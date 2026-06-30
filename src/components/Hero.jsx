@@ -14,20 +14,19 @@ const Hero = () => {
                 <div className='info-data'>
                     <span className="subtitle">Disponible para proyectos</span>
                     <h1>Hey, soy pidev</h1>
-                    <p>Ingeniero en Sistemas Computacionales.
-                        Especializado en el desarrollo de aplicaciones web únicas.
+                    <p>Ingeniero en Sistemas Computacionales. Especializado en desarrollo backend con Java (Spring Boot) y Python. Diseñador de arquitecturas eficientes, APIs REST robustas y soluciones optimizadas con contenedores.
                     </p>
                 </div>
                 <img className="img-hero" src={MyImg} alt="Pedro Ramírez" />
             </section>
             <div className='social'>
-                <a href="mailto:tu-correo@gmail.com" whileHover={{ scale: 1.05 }}
+                <a href="mailto:pedrulex.ramirez@gmail.com" whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }} className="btn btn-outline">
                     <MdOutlineMail className="btn-icon" />
                     <span>Contáctame</span>
                 </a>
                 <a
-                    href="https://linkedin.com/in/tu-perfil"
+                    href="https://linkedin.com/in/pedro-ramírez-b36241325"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline"

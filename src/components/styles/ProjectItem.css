@@ -1,10 +1,16 @@
 .items-projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto 100px auto;
+}
+
+@media (max-width: 768px) {
+    .items-projects {
+        grid-template-columns: 1fr;
+    }
 }
 
 .img-project {
@@ -48,6 +54,7 @@
 }
 
 .test a {
+    box-sizing: border-box;
     text-decoration: none;
     color: black;
     display: flex;
