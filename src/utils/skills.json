@@ -19,6 +19,26 @@
         "javascript": {
             "img": "/src/assets/javascript-logo.png",
             "name": "JavaScript"
+        },
+        "git-github": {
+            "img": "/src/assets/git_github-logo.png",
+            "name": "Git & Github"
+        },
+        "python": {
+            "img": "/src/assets/python-logo.png",
+            "name": "Python"
+        },
+        "docker": {
+            "img": "/src/assets/docker-logo.png",
+            "name": "Docker"
+        },
+        "php": {
+            "img": "/src/assets/php-logo.png",
+            "name": "PHP"
+        },
+        "mobile": {
+            "img": "/src/assets/mobile-logo.png",
+            "name": "Mobile"
         }
     }
 }

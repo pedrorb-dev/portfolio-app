@@ -1,10 +1,11 @@
 import React from 'react'
 import "./styles/ProjectItem.css"
+import { motion } from "framer-motion"
 
 const ProjectItem = ({ project }) => {
     const { name, img, description, tecnologies, test } = project
     return (
-        <div className='items-projects'>
+        <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ amount: 0.25 }} className='items-projects'>
             <div className='img-project'>
                 <img src={img} alt={name} />
             </div>
@@ -13,7 +14,7 @@ const ProjectItem = ({ project }) => {
                 <div className='tecnologies-project'>
                     {
                         tecnologies.map((tec, index) => (
-                            <span key={index}>{tec}</span>
+                            <span className='tecnology' key={index}>{tec}</span>
                         ))
                     }
                 </div>
@@ -22,13 +23,15 @@ const ProjectItem = ({ project }) => {
                 </div>
                 <div className='test-project'>
                     {
-                        test.map((t, index) => (
-                            <a href='#' key={index}>{t}</a>
+                        Object.entries(test).map(([key, value], index) => (
+                            <span className='test' key={index}>
+                                <a href={value.url} target='_blank' rel='noopener noreferrer'>{key}</a>
+                            </span>
                         ))
                     }
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

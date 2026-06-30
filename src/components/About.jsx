@@ -1,11 +1,11 @@
 import React from 'react'
 import "./styles/About.css"
 import MyImg from "../assets/me.jpg"
-
+import { motion } from "framer-motion"
 
 const About = () => {
     return (
-        <section>
+        <motion.section initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ amount: 0.25 }} id='About'>
             <div className="info-data">
                 <h1>Sobre mí</h1>
                 <div className='text'>
@@ -24,7 +24,7 @@ const About = () => {
                 </div>
             </div>
             <img className='img-about' src={MyImg} alt="Pedro Ramírez" />
-        </section>
+        </motion.section>
     )
 }
 

@@ -2,7 +2,7 @@
     "projects": [
         {
             "name": "PapeApp",
-            "img": "/src/assets/PapeApp.avif",
+            "img": "/src/assets/PapeApp.png",
             "description": "Sistema web realizado para una papelería",
             "tecnologies": [
                 "PHP",
@@ -10,23 +10,26 @@
                 "JavaScript",
                 "AJAX"
             ],
-            "test": [
-                "Código"
-            ]
+            "test": {
+                "Código": {
+                    "url": "https://github.com/pedrorb-dev/PapeApp"
+                }
+            }
         },
         {
             "name": "CR-ARQUI",
-            "img": "/src/assets/cr-arqui.webp",
+            "img": "/src/assets/cr-arqui.png",
             "description": "Página web para un arquitecto",
             "tecnologies": [
                 "HTML",
                 "CSS",
                 "JavaScript"
             ],
-            "test": [
-                "Código",
-                "Demo"
-            ]
+            "test": {
+                "Código": {
+                    "url": "https://github.com/pedrorb-dev/cr-arqui "
+                }
+            }
         }
     ]
 }
