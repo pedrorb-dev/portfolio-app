@@ -1,6 +1,6 @@
 import React from 'react'
 import "./styles/About.css"
-import MyImg from "../assets/me.jpg"
+import MyImg from "../assets/me2.jpeg"
 import { motion } from "framer-motion"
 
 const About = () => {
@@ -9,17 +9,21 @@ const About = () => {
             <div className="info-data">
                 <h1>Sobre mí</h1>
                 <div className='text'>
-                    <p>Me llamo Pedro Ramírez, pero mis amigos me dicen piter. Empecé en la
-                        programación cuando tenía 15 años. Actualmente curso la carrera de Ingeniería
-                        en Sistemas Computacionales en 7mo semestre
+                    <p>Soy Pedro Ramírez, estudiante del 7mo semestre de Ingeniería
+                        en Sistemas Computacionales. Con una sólida formación en
+                        lógica de programación y un enfoque autodidacta para adoptar
+                        nuevas tecnologías, busco mi primera experiencia profesional.
                     </p>
                     <p>
-                        Actualmente aprendo diversas tecnologías y mejoro mi critero con problemas lógicos,
-                        de esta manera ayudar a resolver mediante software algunos dificultades que presenten
-                        las empresas
+                        Mi pasión es diseñar y desarrollar soluciones de software
+                        eficientes que impacten directamente en la optimización de
+                        procesos empresariales y resuelvan problemas complejos.
                     </p>
-                    <p>Mi objetivo es resolver los problemas del día a día y brindar un mayor
-                        acceso a la tecnología aprendiendo constantemente
+                    <p>
+                        Me motiva el aprendizaje continuo y el reto de transformar
+                        necesidades de negocio en código funcional y escalable.
+                        Mi objetivo es crecer profesionalmente mientras aporto valor
+                        real a través de la tecnología.
                     </p>
                 </div>
             </div>
