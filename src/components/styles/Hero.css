@@ -30,10 +30,17 @@ section {
         -5px -5px 15px rgba(255, 255, 255, 0.8);
 }
 
-.social {
+/*.social {
     display: flex;
     justify-content: space-evenly;
     padding: 16px;
+}*/
+
+.social {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 150px));
+    padding: 16px;
+    gap: 20px;
 }
 
 .btn {
