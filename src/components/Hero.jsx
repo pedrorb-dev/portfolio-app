@@ -5,17 +5,19 @@ import MyImg from "../assets/me.jpg"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { MdOutlineMail } from 'react-icons/md';
 import { motion } from "framer-motion"
+import { useLanguage } from '../context/LanguageContext'
 
 const Hero = () => {
+    const { text } = useLanguage()
+
     return (
         <motion.div className="Hero" id="Hero" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }}>
 
             <section>
                 <div className='info-data'>
-                    <span className="subtitle">Disponible para proyectos</span>
-                    <h1>Hey, soy Pedro</h1>
-                    <p>Ingeniero en Sistemas Computacionales. Especializado en desarrollo backend con Java (Spring Boot) y Python. Diseñador de arquitecturas eficientes, APIs REST robustas y soluciones optimizadas con contenedores.
-                    </p>
+                    <span className="subtitle">{text.hero.subtitle}</span>
+                    <h1>{text.hero.title}</h1>
+                    <p>{text.hero.description}</p>
                 </div>
                 <img className="img-hero" src={MyImg} alt="Pedro Ramírez" />
             </section>
@@ -23,7 +25,7 @@ const Hero = () => {
                 <a href="mailto:pedrulex.ramirez@gmail.com" whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }} className="btn btn-outline">
                     <MdOutlineMail className="btn-icon" />
-                    <span>Contáctame</span>
+                    <span>{text.hero.contact}</span>
                 </a>
                 <a
                     href="https://linkedin.com/in/pedro-ramírez-b36241325"

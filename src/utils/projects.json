@@ -3,7 +3,10 @@
         {
             "name": "PapeApp",
             "img": "/src/assets/PapeApp.png",
-            "description": "Sistema web realizado para una papelería",
+            "description": {
+                "es": "Sistema web realizado para una papelería",
+                "en": "Web application built for a stationery store"
+            },
             "tecnologies": [
                 "PHP",
                 "MySQL",
@@ -19,7 +22,10 @@
         {
             "name": "CR-ARQUI",
             "img": "/src/assets/cr-arqui.png",
-            "description": "Página web para un arquitecto",
+            "description": {
+                "es": "Página web para un arquitecto",
+                "en": "Website for an architect"
+            },
             "tecnologies": [
                 "HTML",
                 "CSS",

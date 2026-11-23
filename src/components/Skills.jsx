@@ -3,13 +3,15 @@ import data from '../utils/skills.json'
 import SkillItem from './SkillItem'
 import "./styles/Skills.css"
 import { motion } from "framer-motion"
+import { useLanguage } from '../context/LanguageContext'
 
 const Skills = () => {
+    const { text } = useLanguage()
     const skills = Object.values(data.skills)
 
     return (
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ amount: 0.25 }} className='Skills' id='Skills'>
-            <h1>Habilidades</h1>
+            <h1>{text.skills.title}</h1>
             <div className='skills-items'>
                 {skills.map((skill) => (
                     <SkillItem key={skill.name} img={skill.img} skill={skill.name} />

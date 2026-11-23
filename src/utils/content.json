@@ -1,0 +1,60 @@
+{
+    "es": {
+        "hero": {
+            "subtitle": "Disponible para proyectos",
+            "title": "Hey, soy Pedro",
+            "description": "Ingeniero en Sistemas Computacionales. Especializado en desarrollo backend con Java (Spring Boot) y Python. Diseñador de arquitecturas eficientes, APIs REST robustas y soluciones optimizadas con contenedores.",
+            "contact": "Contáctame"
+        },
+        "about": {
+            "title": "Sobre mí",
+            "paragraphs": [
+                "Soy Pedro Ramírez, estudiante del 7mo semestre de Ingeniería en Sistemas Computacionales. Con una sólida formación en lógica de programación y un enfoque autodidacta para adoptar nuevas tecnologías, busco mi primera experiencia profesional.",
+                "Mi pasión es diseñar y desarrollar soluciones de software eficientes que impacten directamente en la optimización de procesos empresariales y resuelvan problemas complejos.",
+                "Me motiva el aprendizaje continuo y el reto de transformar necesidades de negocio en código funcional y escalable. Mi objetivo es crecer profesionalmente mientras aporto valor real a través de la tecnología."
+            ]
+        },
+        "nav": {
+            "inicio": "Inicio",
+            "proyectos": "Proyectos",
+            "habilidades": "Habilidades",
+            "sobreMi": "Sobre mí",
+            "contacto": "Contacto"
+        },
+        "projects": {
+            "title": "Proyectos"
+        },
+        "skills": {
+            "title": "Habilidades"
+        }
+    },
+    "en": {
+        "hero": {
+            "subtitle": "Available for projects",
+            "title": "Hey, I'm Pedro",
+            "description": "Computational Systems Engineer. Specialized in backend development with Java (Spring Boot) and Python. Designer of efficient architectures, robust REST APIs and optimized solutions with containers.",
+            "contact": "Contact me"
+        },
+        "about": {
+            "title": "About me",
+            "paragraphs": [
+                "I'm Pedro Ramírez, a 7th-semester Computational Systems Engineering student. With a solid background in programming logic and a self-taught approach to adopting new technologies, I'm looking for my first professional experience.",
+                "My passion is designing and developing efficient software solutions that directly impact business process optimization and solve complex problems.",
+                "I'm motivated by continuous learning and the challenge of turning business needs into functional, scalable code. My goal is to grow professionally while delivering real value through technology."
+            ]
+        },
+        "nav": {
+            "inicio": "Home",
+            "proyectos": "Projects",
+            "habilidades": "Skills",
+            "sobreMi": "About me",
+            "contacto": "Contact"
+        },
+        "projects": {
+            "title": "Projects"
+        },
+        "skills": {
+            "title": "Skills"
+        }
+    }
+}
