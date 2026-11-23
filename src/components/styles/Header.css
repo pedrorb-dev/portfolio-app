@@ -2,15 +2,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 12px;
     width: 90%;
     max-width: 550px;
-    padding: 15px 0;
+    padding: 15px 20px;
     border-radius: 20px;
     position: sticky;
     top: 20px;
     margin: 0 auto;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: var(--shadow);
+    background-color: var(--header-bg);
     backdrop-filter: blur(5px);
     z-index: 100;
 }
@@ -23,13 +24,39 @@
 
 .Header a {
     text-decoration: none;
-    color: #5E5D5D;
+    color: var(--text-muted);
     font-size: 16px;
     transition: color 0.3s ease-in-out;
 }
 
 .Header a:hover {
-    color: #756200;
+    color: var(--accent);
+}
+
+.theme-switch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background-color: var(--surface);
+    color: var(--accent);
+    font-size: 17px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.theme-switch:hover {
+    background-color: var(--accent);
+    color: var(--accent-text);
+}
+
+.theme-switch:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
 }
 
 .hamburger-btn {
@@ -46,7 +73,7 @@
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #5E5D5D;
+    background-color: var(--text-muted);
     border-radius: 3px;
     transition: all 0.3s ease-in-out;
 }
@@ -68,9 +95,9 @@
         right: 0;
         width: 100%;
         max-width: 220px;
-        background-color: rgba(255, 255, 255, 0.95);
+        background-color: var(--menu-bg);
         backdrop-filter: blur(10px);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        box-shadow: var(--shadow-menu);
         border-radius: 15px;
         padding: 20px;
         flex-direction: column;
@@ -90,7 +117,7 @@
 
     .hamburger-btn.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
-        background-color: #756200;
+        background-color: var(--accent);
     }
 
     .hamburger-btn.active .bar:nth-child(2) {
@@ -99,6 +126,6 @@
 
     .hamburger-btn.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
-        background-color: #756200;
+        background-color: var(--accent);
     }
 }

@@ -1,0 +1,37 @@
+:root {
+  --bg: #f4f3f5;
+  --surface: #ebe8ee;
+  --text: #1e293b;
+  --text-muted: #5f5866;
+  --accent: #4c005a;
+  --accent-hover: #66007a;
+  --accent-text: #ffffff;
+  --border: #d9d3de;
+  --header-bg: rgba(244, 243, 245, 0.85);
+  --menu-bg: rgba(244, 243, 245, 0.96);
+  --shadow: 0 4px 20px rgba(76, 0, 90, 0.16);
+  --shadow-menu: 0 10px 25px rgba(76, 0, 90, 0.12);
+  --shadow-card: 5px 5px 15px rgba(76, 0, 90, 0.18), -5px -5px 15px rgba(255, 255, 255, 0.55);
+  --shadow-card-hover: 12px 12px 25px rgba(76, 0, 90, 0.14), -2px -2px 10px rgba(255, 255, 255, 0.45);
+}
+
+[data-theme='dark'] {
+  --bg: #16101d;
+  --surface: #261a33;
+  --text: #f1e9f6;
+  --text-muted: #b7a6c4;
+  --accent: #c084fc;
+  --accent-hover: #d8b4fe;
+  --accent-text: #1a1024;
+  --border: #4c3a5c;
+  --header-bg: rgba(38, 26, 51, 0.9);
+  --menu-bg: rgba(38, 26, 51, 0.95);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.55);
+  --shadow-menu: 0 10px 25px rgba(0, 0, 0, 0.45);
+  --shadow-card: 5px 5px 15px rgba(0, 0, 0, 0.6), -5px -5px 15px rgba(192, 132, 252, 0.12);
+  --shadow-card-hover: 12px 12px 25px rgba(0, 0, 0, 0.5), -2px -2px 10px rgba(192, 132, 252, 0.1);
+}
+
+body {
+  color: var(--text);
+}

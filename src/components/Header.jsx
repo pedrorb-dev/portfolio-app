@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 // @ts-ignore
 import "./styles/Header.css"
+import ThemeSwitch from './ThemeSwitch'
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -22,6 +23,8 @@ const Header = () => {
                 <a href="#About" onClick={handleLinkClick}>Sobre mí</a>
                 <a href="mailto:pedrulex.ramirez@gmail.com" onClick={handleLinkClick}>Contacto</a>
             </nav>
+
+            <ThemeSwitch />
 
             <button
                 className={`hamburger-btn ${menuOpen ? 'active' : ''}`}
