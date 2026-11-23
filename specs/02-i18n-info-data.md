@@ -1,6 +1,6 @@
 # SPEC 02 — Idiomas español e inglés en los bloques `info-data`
 
-> **Status:** Aprobado
+> **Status:** Implementado
 > **Depends on:** SPEC 01
 > **Date:** 2026-11-22
 > **Objective:** Alternar entre español e inglés los textos de los bloques `.info-data` de Hero y About, leyéndolos desde `src/utils/content.json` y persistiendo la elección en `localStorage`.

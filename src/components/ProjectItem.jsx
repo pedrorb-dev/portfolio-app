@@ -1,9 +1,12 @@
 import React from 'react'
 import "./styles/ProjectItem.css"
 import { motion } from "framer-motion"
+import { useLanguage } from '../context/LanguageContext'
 
 const ProjectItem = ({ project }) => {
+    const { language } = useLanguage()
     const { name, img, description, tecnologies, test } = project
+    const descriptionText = description?.[language] ?? description?.es ?? description
     return (
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ amount: 0.25 }} className='items-projects'>
             <div className='img-project'>
@@ -19,7 +22,7 @@ const ProjectItem = ({ project }) => {
                     }
                 </div>
                 <div className='text'>
-                    <p>{description}</p>
+                    <p>{descriptionText}</p>
                 </div>
                 <div className='test-project'>
                     {

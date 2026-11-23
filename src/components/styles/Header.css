@@ -59,6 +59,40 @@
     outline-offset: 2px;
 }
 
+.language-switch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 36px;
+    height: 36px;
+    padding: 0 8px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--surface);
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.language-switch:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.language-switch:active {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--surface);
+}
+
+.language-switch:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
 .hamburger-btn {
     display: none;
     background: none;
