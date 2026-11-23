@@ -13,7 +13,7 @@ const Hero = () => {
             <section>
                 <div className='info-data'>
                     <span className="subtitle">Disponible para proyectos</span>
-                    <h1>Hey, soy pidev</h1>
+                    <h1>Hey, soy Pedro</h1>
                     <p>Ingeniero en Sistemas Computacionales. Especializado en desarrollo backend con Java (Spring Boot) y Python. Diseñador de arquitecturas eficientes, APIs REST robustas y soluciones optimizadas con contenedores.
                     </p>
                 </div>
