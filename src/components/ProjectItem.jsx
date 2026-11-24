@@ -44,6 +44,7 @@ const ProjectItem = ({ project, isLast = false }) => {
                 </div>
                 <div className='text'>
                     <p>{descriptionText}</p>
+                    <p>{descriptionText}</p>
                 </div>
                 <div className='test-project'>
                     {
