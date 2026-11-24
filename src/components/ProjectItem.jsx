@@ -1,14 +1,35 @@
-import React from 'react'
+import { useRef } from 'react'
 import "./styles/ProjectItem.css"
-import { motion } from "framer-motion"
+import { motion, useInView } from "framer-motion"
 import { useLanguage } from '../context/LanguageContext'
 
-const ProjectItem = ({ project }) => {
+const ProjectItem = ({ project, isLast = false }) => {
     const { language } = useLanguage()
     const { name, img, description, tecnologies, test } = project
     const descriptionText = description?.[language] ?? description?.es ?? description
+
+    const ref = useRef(null)
+    const isInView = useInView(ref, { amount: 0.25 })
+    const hasEntered = useInView(ref, { amount: 0.25, once: true })
+
+    const motionProps = isLast
+        ? {
+            initial: { opacity: 0, y: 50 },
+            animate: { opacity: isInView ? 1 : 0, y: hasEntered ? 0 : 50 },
+        }
+        : {
+            initial: { opacity: 0, y: 50 },
+            whileInView: { opacity: 1, y: 0 },
+            viewport: { amount: 0.25 },
+        }
+
     return (
-        <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ amount: 0.25 }} className='items-projects'>
+        <motion.div
+            ref={ref}
+            {...motionProps}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className='items-projects'
+        >
             <div className='img-project'>
                 <img src={img} alt={name} />
             </div>
