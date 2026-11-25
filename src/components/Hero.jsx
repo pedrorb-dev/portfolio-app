@@ -6,12 +6,14 @@ import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { MdOutlineMail } from 'react-icons/md';
 import { motion } from "framer-motion"
 import { useLanguage } from '../context/LanguageContext'
+import useScrollDownAnimation from '../hooks/useScrollDownAnimation'
 
 const Hero = () => {
     const { text } = useLanguage()
+    const { ref, initial, animate } = useScrollDownAnimation({ y: 30 })
 
     return (
-        <motion.div className="Hero" id="Hero" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }}>
+        <motion.div ref={ref} className="Hero" id="Hero" initial={initial} animate={animate}>
 
             <section>
                 <div className='info-data'>

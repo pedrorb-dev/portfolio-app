@@ -4,11 +4,8 @@ import "./styles/Header.css"
 import ThemeSwitch from './ThemeSwitch'
 import LanguageSwitch from './LanguageSwitch'
 import { useLanguage } from '../context/LanguageContext'
-import LanguageSwitch from './LanguageSwitch'
-import { useLanguage } from '../context/LanguageContext'
 
 const Header = () => {
-    const { text } = useLanguage()
     const { text } = useLanguage()
     const [menuOpen, setMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('Hero');
@@ -91,8 +88,6 @@ const Header = () => {
             </nav>
 
             <ThemeSwitch />
-
-            <LanguageSwitch />
 
             <LanguageSwitch />
 

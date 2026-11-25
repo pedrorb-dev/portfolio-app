@@ -1,14 +1,15 @@
-import React from 'react'
 import "./styles/About.css"
 import MyImg from "../assets/me2.jpeg"
 import { motion } from "framer-motion"
 import { useLanguage } from '../context/LanguageContext'
+import useScrollDownAnimation from '../hooks/useScrollDownAnimation'
 
 const About = () => {
     const { text } = useLanguage()
+    const { ref, initial, animate } = useScrollDownAnimation({ amount: 0.25, y: 50 })
 
     return (
-        <motion.section initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ amount: 0.25 }} id='About'>
+        <motion.section ref={ref} initial={initial} animate={animate} id='About'>
             <div className="info-data">
                 <h1>{text.about.title}</h1>
                 <div className='text'>

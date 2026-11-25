@@ -1,33 +1,20 @@
-import { useRef } from 'react'
 import "./styles/ProjectItem.css"
-import { motion, useInView } from "framer-motion"
+import { motion } from "framer-motion"
 import { useLanguage } from '../context/LanguageContext'
+import useScrollDownAnimation from '../hooks/useScrollDownAnimation'
 
-const ProjectItem = ({ project, isLast = false }) => {
+const ProjectItem = ({ project }) => {
     const { language } = useLanguage()
     const { name, img, description, tecnologies, test } = project
     const descriptionText = description?.[language] ?? description?.es ?? description
 
-    const ref = useRef(null)
-    const isInView = useInView(ref, { amount: 0.25 })
-    const hasEntered = useInView(ref, { amount: 0.25, once: true })
-
-    const motionProps = isLast
-        ? {
-            initial: { opacity: 0, y: 50 },
-            animate: { opacity: isInView ? 1 : 0, y: hasEntered ? 0 : 50 },
-        }
-        : {
-            initial: { opacity: 0, y: 50 },
-            whileInView: { opacity: 1, y: 0 },
-            viewport: { amount: 0.25 },
-        }
+    const { ref, initial, animate } = useScrollDownAnimation({ amount: 0.25, y: 50 })
 
     return (
         <motion.div
             ref={ref}
-            {...motionProps}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            initial={initial}
+            animate={animate}
             className='items-projects'
         >
             <div className='img-project'>
@@ -43,7 +30,6 @@ const ProjectItem = ({ project, isLast = false }) => {
                     }
                 </div>
                 <div className='text'>
-                    <p>{descriptionText}</p>
                     <p>{descriptionText}</p>
                 </div>
                 <div className='test-project'>

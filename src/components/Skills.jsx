@@ -1,16 +1,17 @@
-import React from 'react'
 import data from '../utils/skills.json'
 import SkillItem from './SkillItem'
 import "./styles/Skills.css"
 import { motion } from "framer-motion"
 import { useLanguage } from '../context/LanguageContext'
+import useScrollDownAnimation from '../hooks/useScrollDownAnimation'
 
 const Skills = () => {
     const { text } = useLanguage()
     const skills = Object.values(data.skills)
+    const { ref, initial, animate } = useScrollDownAnimation({ amount: 0.25, y: 30 })
 
     return (
-        <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ amount: 0.25 }} className='Skills' id='Skills'>
+        <motion.div ref={ref} initial={initial} animate={animate} className='Skills' id='Skills'>
             <h1>{text.skills.title}</h1>
             <div className='skills-items'>
                 {skills.map((skill) => (
