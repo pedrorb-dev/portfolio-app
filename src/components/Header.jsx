@@ -11,7 +11,7 @@ const Header = () => {
     const [activeSection, setActiveSection] = useState('Hero');
 
     useEffect(() => {
-        const sectionIds = ['Hero', 'Projects', 'Skills', 'About'];
+        const sectionIds = ['Hero', 'Projects', 'Skills', 'About', 'Contact'];
         const sections = sectionIds
             .map((id) => document.getElementById(id))
             .filter(Boolean);
@@ -84,6 +84,14 @@ const Header = () => {
                     onClick={() => handleLinkClick('About')}
                 >
                     {text.nav.sobreMi}
+                </a>
+                <a
+                    href="#Contact"
+                    className={`menu-item ${activeSection === 'Contact' ? 'active' : ''}`}
+                    aria-current={activeSection === 'Contact' ? 'true' : undefined}
+                    onClick={() => handleLinkClick('Contact')}
+                >
+                    {text.nav.contacto}
                 </a>
             </nav>
 

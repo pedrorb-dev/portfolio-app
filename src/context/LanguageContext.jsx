@@ -32,6 +32,7 @@ export const LanguageProvider = ({ children }) => {
     nav: { ...content.es.nav, ...(content[language]?.nav ?? {}) },
     projects: { ...content.es.projects, ...(content[language]?.projects ?? {}) },
     skills: { ...content.es.skills, ...(content[language]?.skills ?? {}) },
+    contact: { ...content.es.contact, ...(content[language]?.contact ?? {}) },
   }), [language])
 
   const toggleLanguage = useCallback(() => {

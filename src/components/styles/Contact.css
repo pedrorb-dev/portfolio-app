@@ -1,0 +1,123 @@
+#Contact.Contact .contact-form,
+#Contact.Contact .contact-form * {
+    box-sizing: border-box;
+}
+
+#Contact.Contact h1 {
+    margin: 0 0 1rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.contact-description {
+    font-size: 15px;
+    color: var(--text-muted);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--surface);
+    box-shadow: var(--shadow-card);
+    font-size: 16px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-field label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.form-field input,
+.form-field textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--border);
+    border-radius: 50px;
+    background-color: var(--bg);
+    color: var(--text);
+    font: inherit;
+    font-size: 15px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.form-field textarea {
+    min-height: 120px;
+    border-radius: 20px;
+    resize: vertical;
+}
+
+.form-field input:focus-visible,
+.form-field textarea:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-color: var(--accent);
+}
+
+.honeypot {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.btn.contact-submit {
+    align-self: flex-start;
+    justify-content: center;
+    background-color: var(--accent);
+    color: var(--accent-text);
+    border-color: var(--border);
+}
+
+.btn.contact-submit:hover:not(:disabled) {
+    background-color: var(--accent-hover);
+    color: var(--accent-text);
+}
+
+.btn.contact-submit:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.btn.contact-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.contact-feedback {
+    min-height: 1.2em;
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+@media (max-width: 375px) {
+    #Contact.Contact {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 2em 1em;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .btn.contact-submit {
+        align-self: stretch;
+    }
+}

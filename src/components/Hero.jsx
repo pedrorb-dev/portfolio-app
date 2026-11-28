@@ -24,7 +24,7 @@ const Hero = () => {
                 <img className="img-hero" src={MyImg} alt="Pedro Ramírez" />
             </section>
             <div className='social'>
-                <a href="mailto:pedrulex.ramirez@gmail.com" whileHover={{ scale: 1.05 }}
+                <a href="#Contact" whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }} className="btn btn-outline">
                     <MdOutlineMail className="btn-icon" />
                     <span>{text.hero.contact}</span>

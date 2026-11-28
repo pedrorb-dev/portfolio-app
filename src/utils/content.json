@@ -3,15 +3,15 @@
         "hero": {
             "subtitle": "Disponible para proyectos",
             "title": "Hey, soy Pedro",
-            "description": "Ingeniero en Sistemas Computacionales. Especializado en desarrollo backend con Java (Spring Boot) y Python. Diseñador de arquitecturas eficientes, APIs REST robustas y soluciones optimizadas con contenedores.",
+            "description": "Desarrollador Full-Stack & Mobile con experiencia en entornos reales. Construyo apps móviles ágiles con React Native, Flutter y Supabase, y sistemas empresariales robustos a medida con Java (Spring Boot), Angular y PostgreSQL.",
             "contact": "Contáctame"
         },
         "about": {
             "title": "Sobre mí",
             "paragraphs": [
-                "Soy Pedro Ramírez, estudiante del 7mo semestre de Ingeniería en Sistemas Computacionales. Con una sólida formación en lógica de programación y un enfoque autodidacta para adoptar nuevas tecnologías, busco mi primera experiencia profesional.",
-                "Mi pasión es diseñar y desarrollar soluciones de software eficientes que impacten directamente en la optimización de procesos empresariales y resuelvan problemas complejos.",
-                "Me motiva el aprendizaje continuo y el reto de transformar necesidades de negocio en código funcional y escalable. Mi objetivo es crecer profesionalmente mientras aporto valor real a través de la tecnología."
+                "Soy Pedro Ramírez, estudiante de Ingeniería en Sistemas Computacionales y desarrollador de software con experiencia real construyendo aplicaciones en producción. He colaborado en entornos empresariales desarrollando módulos de un sistema ERP con Angular, Spring Boot y PostgreSQL, además de participar en proyectos web con PHP y bases de datos relacionales.",
+                "Mi enfoque se basa en el criterio técnico y el pragmatismo: elijo la arquitectura que mejor responde a los tiempos y necesidades de cada proyecto. Para desarrollo móvil rápido y MVPs trabajo con React Native o Flutter junto a Supabase; cuando el sistema exige lógica de negocio compleja, seguridad y control total, diseño backends a medida con Java y Spring Boot.",
+                "Me motiva transformar requerimientos de negocio en software limpio, escalable y mantenible, apoyándome en buenas prácticas de ingeniería, control de versiones con Git y contenedores con Docker para aportar valor real en cada equipo."
             ]
         },
         "nav": {
@@ -26,21 +26,37 @@
         },
         "skills": {
             "title": "Habilidades"
+        },
+        "contact": {
+            "title": "Contacto",
+            "description": "¿Tienes un proyecto en mente o quieres conversar? Envíame un mensaje y te respondo pronto.",
+            "name": "Nombre",
+            "email": "Correo electrónico",
+            "message": "Mensaje",
+            "namePlaceholder": "Tu nombre",
+            "emailPlaceholder": "tu@correo.com",
+            "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+            "submit": "Enviar mensaje",
+            "sending": "Enviando mensaje...",
+            "success": "¡Mensaje enviado! Te responderé pronto.",
+            "error": "No se pudo enviar el mensaje. Inténtalo de nuevo.",
+            "required": "Este campo es obligatorio",
+            "invalidEmail": "Introduce un correo electrónico válido"
         }
     },
     "en": {
         "hero": {
             "subtitle": "Available for projects",
             "title": "Hey, I'm Pedro",
-            "description": "Computational Systems Engineer. Specialized in backend development with Java (Spring Boot) and Python. Designer of efficient architectures, robust REST APIs and optimized solutions with containers.",
+            "description": "Full-Stack & Mobile Developer with real-world production experience. I build agile mobile apps with React Native, Flutter, and Supabase, as well as custom, robust enterprise systems with Java (Spring Boot), Angular, and PostgreSQL.",
             "contact": "Contact me"
         },
         "about": {
             "title": "About me",
             "paragraphs": [
-                "I'm Pedro Ramírez, a 7th-semester Computational Systems Engineering student. With a solid background in programming logic and a self-taught approach to adopting new technologies, I'm looking for my first professional experience.",
-                "My passion is designing and developing efficient software solutions that directly impact business process optimization and solve complex problems.",
-                "I'm motivated by continuous learning and the challenge of turning business needs into functional, scalable code. My goal is to grow professionally while delivering real value through technology."
+                "I'm Pedro Ramírez, a Computer Systems Engineering student and software developer with hands-on experience building production applications. I have worked in real corporate environments developing modules for an enterprise ERP system using Angular, Spring Boot, and PostgreSQL, alongside web projects built with PHP and relational databases.",
+                "My approach is driven by technical judgment and pragmatism: I choose the architecture that best fits each project's timeline and complexity. For fast mobile development and MVPs, I leverage React Native or Flutter paired with Supabase; when a system demands complex business logic, security, and full server control, I engineer custom backends with Java and Spring Boot.",
+                "I'm passionate about turning business requirements into clean, scalable, and maintainable software—relying on solid engineering practices, Git workflows, and Docker to deliver real impact in every team I join."
             ]
         },
         "nav": {
@@ -55,6 +71,22 @@
         },
         "skills": {
             "title": "Skills"
+        },
+        "contact": {
+            "title": "Contact",
+            "description": "Have a project in mind or just want to chat? Send me a message and I'll get back to you soon.",
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "namePlaceholder": "Your name",
+            "emailPlaceholder": "you@example.com",
+            "messagePlaceholder": "Tell me about your project...",
+            "submit": "Send message",
+            "sending": "Sending message...",
+            "success": "Message sent! I'll get back to you soon.",
+            "error": "Couldn't send the message. Please try again.",
+            "required": "This field is required",
+            "invalidEmail": "Enter a valid email address"
         }
     }
 }
